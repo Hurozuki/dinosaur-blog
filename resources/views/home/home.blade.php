@@ -9,15 +9,7 @@
 </head>
 <body>
 
-    <div>
-        <p>
-            hogehoge
-        </p>
-    </div>
 
-    <div class="navbar">
-        <p>恐竜ブログ</p>
-    </div>
     
 </body>
 </html>
