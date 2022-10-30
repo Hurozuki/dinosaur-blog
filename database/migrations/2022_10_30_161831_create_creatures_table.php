@@ -14,8 +14,19 @@ return new class extends Migration
     public function up()
     {
         Schema::create('creatures', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->increments('id');
+            $table->integer('type');
+            $table->string('name');
+            $table->string('name_english');
+            $table->text('explanation')->nullable(true);
+            $table->string('icon_path')->nullable(true);
+            $table->string('main_image_path')->nullable(true);
+            $table->smallInteger('chronological_age_begin')->nullable(true);
+            $table->smallInteger('chronological_age_end')->nullable(true);
+            $table->double('overall_length_begin')->nullable(true);
+            $table->double('overall_length_end')->nullable(true);
+            $table->double('overall_height_begin')->nullable(true);
+            $table->double('overall_height_end')->nullable(true);
         });
     }
 

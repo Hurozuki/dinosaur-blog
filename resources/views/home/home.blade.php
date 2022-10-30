@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ジュラシック・ラボ</title>
     @vite(['resources/js/app.js'])
-    <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a75656e3ce.js" crossorigin="anonymous"></script>
 
 </head>
 <style>
@@ -15,6 +15,7 @@
         box-sizing: border-box;
     }
 
+    /* heder */
     .h-43 {
         height: 43%;
     }
@@ -49,6 +50,20 @@
     }
 
 
+
+    /* main */
+    .right-content > aside {
+        width: 250px;
+    }
+
+    .left-content {
+        width: 250px;
+    }
+
+    .left-content aside {
+        width: 230px;
+    }
+
 </style>
 <body>
 
@@ -76,6 +91,38 @@
         
     </div>
 </nav>
+
+
+<main class="bg-light d-flex" style="height: 1000px">
+    
+    <div class="h-100 bg-danger left-content">
+        <aside>
+            <h4>今週のトレンド恐竜</h4>
+            <ul>
+                <li>ティラノサウルス</li>
+                <li>モササウルス</li>
+                <li>モササウルス</li>
+            </ul>
+        </aside>
+    </div>
+
+
+    <div class="h-100 bg-gray-100 w-100">
+        <article>
+            <h2>Ark面白すぎな件。</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, molestiae deserunt. Voluptas exercitationem nihil maiores sequi similique recusandae repellat, aut laboriosam optio reiciendis, ad velit dolor! Totam ipsum et culpa.</p>
+        </article>
+    </div>
+
+
+    <div class="d-lg-flex d-none justify-content-center h-100 right-content">
+        <aside class="bg-white h-100">
+            
+        </aside>
+    </div>
+
+</main>
+
 
     
 </body>
