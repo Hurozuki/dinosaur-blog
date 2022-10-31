@@ -14,13 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('articles', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->integer('author_id');
             $table->string('title');
             $table->text('body');
             $table->string('thumbnail_path')->nullable(true);
             $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->useCurrentOnUpdate();
+            $table->timestamp('updated_at')->useCurrent();
             $table->timestamp('published_at')->nullable(true);
         });
     }
