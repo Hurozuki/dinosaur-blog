@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.bg-theme {
+    background-color: #00a096;
+}
+
+.bg-theme-back {
+    background-color: #f5f6f6;
+}
+
+.cur-p {
+    cursor: pointer;
+}
