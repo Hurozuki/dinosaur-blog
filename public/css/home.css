@@ -1,5 +1,6 @@
 main > div {
     padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 .left-content aside {
     width: 250px;
@@ -62,8 +63,43 @@ main > div {
 }
 
 .author p:first-of-type {
-    margin-right: 6px;
+    margin-right: 10px;
 }
+
 .author p:nth-of-type(2) {
-    margin-right: 6px;
+    margin-right: 8px;
+}
+
+.tag button {
+    font-size: 7px;
+}
+
+.tag button:not(:first-child) {
+    margin-left: 5px;
+}
+
+.tag button:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.tag button:active {
+    background-color: aqua;
+}
+
+.tag button img {
+    width: 17px;
+    height: 17px;
+    margin-right: 2px;
+}
+
+.right-content aside:first-child img{
+    width: 80px;
+    height: 80px;
+    top: -25px;
+}
+
+.trivia-header {
+    height: 62px;
+    font-family: "corporate";
 }

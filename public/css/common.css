@@ -7,10 +7,16 @@
     background-color: #00a096;
 }
 
+
 .bg-theme-back {
-    background-color: #f5f6f6;
+    background-color: #00a09612;
 }
 
 .cur-p {
     cursor: pointer;
 }
+
+@font-face {
+    font-family: 'corporate';
+    src: url('/fonts/Corporate-Logo-Rounded-Bold-ver3.otf') format('opentype');
+  }

@@ -2,7 +2,7 @@
 
     {{-- top --}}
     <div class="d-flex justify-content-between h-43 mx-auto">
-        <img src="{{ asset('images/main_icon.svg') }}" class="main-icon">
+        <img src="{{ asset('images/main-icon.png') }}" class="main-icon">
 
         <form action="" class="d-flex form-inline align-items-center bg-white px-2 search-form">
             <input type="search" class="form-control border-0 shadow-none w-100" placeholder="恐竜を検索">
