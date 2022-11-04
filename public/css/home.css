@@ -6,6 +6,20 @@ main > div {
     width: 250px;
 }
 
+.trend-header  {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.trend-header > span:first-child  {
+    padding-bottom: 6px;
+}
+
+.trend-header > span:first-child img  {
+    transform: rotate(-17deg);
+    width: 30px;
+    height: 30px;
+}
+
 .trend-aside a {
     background-color: inherit;
     cursor: pointer;
@@ -18,33 +32,81 @@ main > div {
     color: black;
 }
 
-.main-content article {
-    width: 95%;
+.trend-header > nav {
+height: 24px;
 }
-.right-content > aside {
-    width: 290px;
+
+.trend-header > nav button {
+    width: 37px;
+    height: 24px;
+    font-size: 12px;
+    background-color: initial;
 }
 
 
-.main-content h4 {
+.trend-header > nav button::before {
+    background-color: var(--main-color);
+    top: 22px;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+
+    transform: scaleX(0);
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: transform;
+}
+
+.unselected-btn:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+
+
+.main-content h5 {
     font-weight: bold;
 }
 
-.main-content > a span {
+.main-content > a > div:first-child  {
     width: 92px;
     height: 92px;
 }
-    
+
 .main-content > a {
     height: 180px;
 }
 
+@media screen and (max-width: 600px) {
+    .main-content > a {
+        height: initial !important;
+    }
+    .main-content > a > div:first-child  {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        background-color: initial !important;
+        opacity: .4;
+    }
+
+    .article-right {
+        width: initial !important;
+        z-index: 10;
+    }
+}
+    
+
 .article-right {
-    margin-left: 17px;
+    width: calc(100% - 123px);
 }
 
 
-.article-right h4:hover {
+.article-right h5:hover {
     text-decoration: underline;
 }
 
@@ -56,6 +118,10 @@ main > div {
 }
 .author img:hover{
     opacity: .7;
+}
+
+.author p {
+    font-size: 12.5px;
 }
 
 .author p:first-of-type:hover {
@@ -70,21 +136,21 @@ main > div {
     margin-right: 8px;
 }
 
-.tag button {
-    font-size: 7px;
+.author i {
+    margin-right: 0.5px;
 }
 
-.tag button:not(:first-child) {
-    margin-left: 5px;
+.tag button {
+    font-size: 7px;
+    height: 21px;
 }
 
 .tag button:hover {
-    background-color: #f1f1f1;
-    color: black;
+    background-color: var(--base-color);
 }
 
-.tag button:active {
-    background-color: aqua;
+.tag button:not(:last-child) {
+    margin-right: 5px;
 }
 
 .tag button img {
@@ -93,13 +159,8 @@ main > div {
     margin-right: 2px;
 }
 
-.right-content aside:first-child img{
-    width: 80px;
-    height: 80px;
-    top: -25px;
-}
 
-.trivia-header {
-    height: 62px;
-    font-family: "corporate";
+
+.right-content > aside {
+    width: 290px;
 }

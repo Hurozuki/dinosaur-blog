@@ -2,21 +2,67 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'corporate';
+    src: url("../fonts/Corporate-Logo-Rounded-Bold-ver3.otf") format('opentype');
+  }
 
-.bg-theme {
-    background-color: #00a096;
+  :root {
+    --main-color: #00a096;
+    --base-color: #00a09612;
+  }
+
+.bg-main {
+    background-color: var(--main-color);
 }
 
 
-.bg-theme-back {
-    background-color: #00a09612;
+.bg-base {
+    background-color: var(--base-color);
 }
+
+
+
+.mini-content {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.mini-content img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: -25px;
+}
+
+.mini-content div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 62px;
+    font-family: "corporate";
+    border-radius: 8px 8px 0px 0px;
+    color: white;
+    background-color: var(--main-color);
+}
+
+.mini-content div:first-of-type h5 {
+    margin: 0px;
+}
+
+.mini-content div:nth-of-type(2) {
+    padding: 1rem;
+}
+
+.mini-content div:nth-of-type(2) p {
+margin: 0px;
+}
+
+
 
 .cur-p {
     cursor: pointer;
 }
 
-@font-face {
-    font-family: 'corporate';
-    src: url('/fonts/Corporate-Logo-Rounded-Bold-ver3.otf') format('opentype');
-  }
