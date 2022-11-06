@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,12 @@ use App\Http\Controllers\MainController;
 |
 */
 
-Route::get('/', [MainController::class, 'home'])->name('home.home');
+Route::get('/', [MainController::class, 'index'])->name('index');
+Route::get('/dinosaur', [MainController::class, 'dinosaur'])->name('dinosaur');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 

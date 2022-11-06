@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/a75656e3ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('css/common.css') }}" >
     <link rel="stylesheet" href="{{ asset('css/header.css') }}" >
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}" >
     <link rel="stylesheet" href="@yield("css")" >
 </head>
 
@@ -19,7 +20,7 @@
 @endcomponent
 
 
-@yield("content");
+@yield("content")
 
 @component('components.footer')
 @endcomponent

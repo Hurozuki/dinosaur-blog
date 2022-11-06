@@ -7,8 +7,14 @@ use Illuminate\Http\Request;
 class MainController extends Controller
 {
     //ホーム画面
-    public function home()
+    public function index()
     {
-        return view('home.home');
+        return view('index');
+    }
+
+    //恐竜詳細ページ
+    public function dinosaur()
+    {
+        return view('dinosaur');
     }
 }

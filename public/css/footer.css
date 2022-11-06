@@ -1,3 +1,59 @@
 footer {
     height: 300px;
 }
+
+@media screen and (max-width: 1140px) {
+    footer {
+        height: 100%;
+    }
+}
+
+
+footer .row {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+footer .row > div {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1140px) {
+    footer .row {
+        width: 100%;
+    }
+}
+
+
+.footer-logo img {
+    width: 60px;
+}
+
+.footer-logo h3 {
+    font-family: "Shirokuma";
+}
+
+
+
+.footer-contents h4,
+.footer-opinion h4 {
+    margin-bottom: 13px !important;
+}
+
+.footer-contents ul li a:hover{
+    text-decoration: underline !important;
+}
+
+.footer-opinion .form-control {
+    resize: none;
+}
+
+.footer-opinion .form-control:focus {
+    box-shadow: 0 0 0 0.25rem var(--base-color);
+}
+
+
+.footer-opinion form button[type="submit"] {
+    margin-top: 8px;
+    font-size: 11px;
+}

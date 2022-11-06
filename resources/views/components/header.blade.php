@@ -12,10 +12,17 @@
     {{-- button --}}
     <div class="h-43 mx-auto">
 
-        <div>
-            <button class="btn bg-main text-white h-75" >ホーム</button>
-            <button class="btn bg-main text-white h-75" >図鑑</button>
-        </div>
+        <nav id="header-navigation" class="text-white h-75">
+            <ul>
+                <li>
+                    <a href="">ホーム</a>
+                </li>
+                <li>
+                    <a href="">図鑑</a>
+                </li>
+            </ul>
+            <span id="header-slide"></span>
+        </nav>
         
     </div>
 </nav>

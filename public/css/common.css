@@ -6,6 +6,12 @@
     font-family: 'corporate';
     src: url("../fonts/Corporate-Logo-Rounded-Bold-ver3.otf") format('opentype');
   }
+  
+@font-face {
+    font-family: 'Shirokuma';
+    src: url("../fonts/001Shirokuma-Regular.otf") format('opentype');
+}
+
 
   :root {
     --main-color: #00a096;
@@ -21,6 +27,16 @@
     background-color: var(--base-color);
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #ccc;
+ }
+::-webkit-scrollbar-thumb{
+    background-color: #17585d;
+ }
 
 
 
@@ -51,6 +67,7 @@
 
 .mini-content div:first-of-type h5 {
     margin: 0px;
+    font-weight: bold;
 }
 
 .mini-content div:nth-of-type(2) {
