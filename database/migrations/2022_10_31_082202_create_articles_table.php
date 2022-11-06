@@ -20,7 +20,7 @@ return new class extends Migration
             $table->text('body');
             $table->string('thumbnail_path')->nullable(true);
             $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
             $table->timestamp('published_at')->nullable(true);
         });
     }

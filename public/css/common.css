@@ -23,6 +23,7 @@
 
 
 
+
 .mini-content {
     position: relative;
     background-color: white;
@@ -58,6 +59,122 @@
 
 .mini-content div:nth-of-type(2) p {
 margin: 0px;
+}
+
+
+
+
+
+.ranking-content {
+    width: 250px;
+}
+
+
+.ranking-header  {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.ranking-header > span:first-child  {
+    display: flex;
+    align-items: center;
+    padding-bottom: 6px;
+}
+
+.ranking-header > span:first-child h6 {
+    margin: 0px;
+}
+
+.ranking-header > span:first-child img  {
+    width: 30px;
+    height: 30px;
+}
+
+
+.ranking-header > nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 24px;
+}
+
+.ranking-header > nav button {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 30px;
+    height: 24px;
+    padding: 0px;
+    font-size: 12px;
+    background-color: initial;
+    border: none;
+}
+
+
+.ranking-header > nav button::before {
+    background-color: var(--main-color);
+    top: 22px;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+
+    transform: scaleX(0);
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: transform;
+}
+
+.unselected-btn:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+
+.ranking-aside a {
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    cursor: pointer;
+    border: none;
+    color:#797979;
+    height: 73px;
+}
+
+
+.ranking-aside a:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+
+.ranking-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.ranking-string {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4px;
+}
+
+.ranking-string p{
+    margin: 0px;
+}
+.ranking-string p:first-child {
+    font-size: 14px;
+}
+
+.ranking-string p:nth-child(2) {
+    font-size: 11px;
 }
 
 

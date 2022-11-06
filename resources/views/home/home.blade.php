@@ -9,30 +9,72 @@
 
 <main class="d-flex bg-base">
     
-    <div class="left-content d-xl-flex d-none h-100 px-4">
-        <aside>
-            <div class="trend-header d-flex justify-content-between align-items-end">
-                <span class="d-flex align-items-center">
+    <div class="left-content d-xl-flex d-none flex-column h-100 px-4">
+        <aside class="ranking-content">
+            <div class="ranking-header">
+                <span>
                     <img src="{{ asset("images/egg.png") }}">
-                    <h6 class="m-0">トレンド恐竜</h6>
+                    <h6>トレンド恐竜</h6>
                 </span>
-                <nav class="d-flex justify-content-end">
-                    <button class="unselected-btn border-0 position-relative d-flex align-items-start justify-content-center p-0">
+                <nav>
+                    <button class="unselected-btn">
                         総合
                     </button>
-                    <button class="unselected-btn border-0 position-relative d-flex align-items-start justify-content-center p-0">
+                    <button class="unselected-btn">
                         月間
                     </button>
-                    <button class="unselected-btn border-0 position-relative d-flex align-items-start justify-content-center p-0">
+                    <button class="unselected-btn">
                         週間
                     </button>
                 </nav>
             </div>
 
-            <div class="trend-aside list-group">
+            <div class="ranking-aside list-group">
                 @for($i=0; $i<10; $i++)
-                <img src="{{ asset("images/dinosaur-icons/therizinosaurus.png") }}">
-                    <a class="list-group-item list-group-item-action">ティラノサウルス</a>
+                    <a class="list-group-item list-group-item-action">
+                        <img class="ranking-icon" src="{{ asset("images/dinosaur-icons/therizinosaurus.png") }}">
+                        <span class="ranking-string">
+                            <p>テリジノサウルス</p>
+                            <p>1592 views</p>
+                        </span>
+                    </a>
+                @endfor
+            </div>
+
+        </aside>
+
+
+
+
+
+        <aside class="ranking-content mt-5">
+            <div class="ranking-header">
+                <span>
+                    <img src="{{ asset("images/boy.png") }}">
+                    <h6>トレンドユーザー</h6>
+                </span>
+                <nav>
+                    <button class="unselected-btn">
+                        総合
+                    </button>
+                    <button class="unselected-btn">
+                        月間
+                    </button>
+                    <button class="unselected-btn">
+                        週間
+                    </button>
+                </nav>
+            </div>
+
+            <div class="ranking-aside list-group">
+                @for($i=0; $i<10; $i++)
+                    <a class="list-group-item list-group-item-action">
+                        <img class="ranking-icon" src="{{ asset("images/user-icons/earless-seal.png") }}">
+                        <span class="ranking-string">
+                            <p>風呂好き</p>
+                            <p>1592 scores</p>
+                        </span>
+                    </a>
                 @endfor
             </div>
 

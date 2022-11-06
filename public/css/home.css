@@ -2,71 +2,10 @@ main > div {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
-.left-content aside {
-    width: 250px;
-}
 
-.trend-header  {
-    border-bottom: 2px solid var(--main-color);
-}
-
-.trend-header > span:first-child  {
-    padding-bottom: 6px;
-}
-
-.trend-header > span:first-child img  {
+.ranking-content:first-child .ranking-header img {
     transform: rotate(-17deg);
-    width: 30px;
-    height: 30px;
 }
-
-.trend-aside a {
-    background-color: inherit;
-    cursor: pointer;
-    border: none;
-    color:#797979;
-}
-
-.trend-aside a:hover {
-    background-color: #f0f0f0;
-    color: black;
-}
-
-.trend-header > nav {
-height: 24px;
-}
-
-.trend-header > nav button {
-    width: 37px;
-    height: 24px;
-    font-size: 12px;
-    background-color: initial;
-}
-
-
-.trend-header > nav button::before {
-    background-color: var(--main-color);
-    top: 22px;
-    content: "";
-    display: block;
-    height: 3px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-
-    transform: scaleX(0);
-    transition-duration: 0.2s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    transition-property: transform;
-}
-
-.unselected-btn:hover::before {
-    transform: scaleX(1);
-}
-
-
-
 
 
 .main-content h5 {
